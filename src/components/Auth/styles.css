@@ -1,0 +1,76 @@
+/* Form Container Styles - Styles the container holding the registration and login forms */
+.form-container {
+    background-color: #dfdfdf; /* Sets the background color of the form container to white */
+    border-radius: 8px; /* Rounds the corners of the form container */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow around the form container */
+    width: 350px; /* Sets a fixed width for the form container */
+    padding: 20px; /* Adds padding inside the form container */
+    margin: 20px auto; /* Centers the form container horizontally on the page */
+    z-index: 1; /* Ensures the form container appears above other content */
+    position: relative; /* Allows for positioning of child elements or pseudo-elements */
+}
+
+/* Form Title Styles - Applies to the title of the form (h1 within the form container) */
+.form-title {
+    text-align: center; /* Centers the title text */
+    color: #6a5d19; /* Sets the title text color to dark grey */
+    font-size: 24px; /* Sets the font size of the title */
+    margin-bottom: 20px; /* Adds margin below the title */
+}
+
+/* Form Label Styles - Applies to labels within the forms */
+.form-label {
+    display: block; /* Displays the label as a block element, making it full-width */
+    margin-bottom: 5px; /* Adds space below each label */
+    color: #555; /* Sets the label text color to a medium grey */
+}
+
+/* Form Input Styles - Applies to all input fields within the forms */
+.form-input {
+    width: 100%; /* Makes the input field full-width */
+    padding: 10px; /* Adds padding inside the input field */
+    margin-bottom: 15px; /* Adds space below each input field */
+    border: 1px solid #ccc; /* Adds a light grey border around the input field */
+    border-radius: 4px; /* Rounds the corners of the input field */
+    box-sizing: border-box; /* Ensures padding and border are included in the element's width and height */
+    font-size: 14px; /* Sets the font size inside the input field */
+}
+
+/* Form Button Styles - Applies to all buttons within the forms */
+.form-button {
+    width: 100%; /* Makes the button full-width */
+    background-color: #7f7a61; /* Sets the button background color to blue */
+    color: whitesmoke; /* Sets the button text color to white */
+    padding: 10px; /* Adds padding inside the button */
+    border: none; /* Removes any default border */
+    border-radius: 4px; /* Rounds the corners of the button */
+    cursor: pointer; /* Changes the cursor to a pointer when hovering over the button */
+    font-size: 16px; /* Sets the font size inside the button */
+}
+
+/* Form Button Hover Effect - Changes the button color when hovered */
+.form-button:hover {
+    background-color: #4a483b; /* Changes the background color to a darker blue on hover */
+    color: aqua;
+}
+
+/* Form Switch Link Styles - Applies to the links that switch between registration and login forms */
+.form-switch-link {
+    display: block; /* Displays the link as a block element */
+    text-align: center; /* Centers the link text */
+    margin-top: 10px; /* Adds space above the link */
+    font-size: 14px; /* Sets the font size of the link text */
+    color: #4a483b; /* Sets the link text color to blue */
+    cursor: pointer; /* Changes the cursor to a pointer when hovering over the link */
+}
+
+/* Form Switch Link Hover Effect - Adds an underline to the link when hovered */
+.form-switch-link:hover {
+    text-decoration: underline; /* Underlines the link text on hover */
+    color: rgb(21, 54, 54);
+}
+
+/* Hidden Class - Used to hide elements (e.g., the login form when the registration form is shown) */
+.hidden {
+    display: none; /* Hides the element from view */
+}

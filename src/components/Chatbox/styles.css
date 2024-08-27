@@ -1,0 +1,111 @@
+/* Widget Styles */
+#web3forms__widget {
+    position: relative;
+  }
+  
+  #w3f__widget--content {
+    position: fixed;
+    z-index: 50;
+    bottom: 100px;
+    right: 5px;
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    min-height: 250px;
+    max-height: 600px;
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: auto;
+  }
+  
+  #w3f__widget--content .widget-header {
+    padding: 20px;
+    text-align: center;
+    background-color: rgb(68, 95, 125);; /* Indigo color */
+    color: white;
+  }
+  
+  #w3f__widget--content .widget-header h3 {
+    margin: 0;
+    font-size: 18px;
+  }
+  
+  #w3f__widget--content .widget-header p {
+    margin: 5px 0 0;
+    opacity: 0.5;
+  }
+  
+  #w3f__widget--content .widget-body {
+    padding: 20px;
+    background-color: #f9fafb;
+  }
+  
+  #w3f__widget--content .widget-body form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .widget-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  .widget-input:focus {
+    border-color: rgb(68, 95, 125);;
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(79, 70, 229, 0.1);
+  }
+  
+  .widget-button {
+    width: 100%;
+    padding: 12px;
+    background-color: rgb(68, 95, 125);;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .widget-button:hover {
+    background-color: rgb(68, 95, 125);;
+  }
+  
+  .widget-button:focus {
+    outline: none;
+  }
+  
+  #web3forms__widget button.widget-toggle {
+    position: fixed;
+    z-index: 40;
+    right: 5px;
+    bottom: 5px;
+    width: 56px;
+    height: 56px;
+    background-color: rgb(68, 95, 125);;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s;
+  }
+  
+  #web3forms__widget button.widget-toggle:hover {
+    background-color: rgb(68, 95, 125);;
+  }
+  
+  #web3forms__widget button.widget-toggle svg {
+    width: 24px;
+    height: 24px;
+  }
+  
