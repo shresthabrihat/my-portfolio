@@ -1,0 +1,37 @@
+/* Global Styles - Applies to all elements within the <body> */
+body {
+    font-family: Arial, sans-serif; /* Sets the font for the entire page */
+    background-color: #eed9be; /* Light beige background for the entire page */
+    color: #412e2e; /* Dark brown text color for the entire page */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styles for the main heading (h1) */
+.homePageTitle {
+    color: #6a5d19; /* Dark yellow color for the main heading */
+    text-align: center; /* Centers the text horizontally */
+    text-shadow: 
+        -1px -1px 0 rgb(68, 95, 125),  
+         1px -1px 0 rgb(68, 95, 125),
+        -1px  1px 0 rgb(68, 95, 125),
+         1px  1px 0 rgb(68, 95, 125),
+         4px 4px 10px rgba(0, 0, 0, 0.5); /* Adds a shadow effect */
+    -webkit-text-stroke: 1px rgb(68, 95, 125); /* Adds a blue stroke to the text */
+    pointer-events: none;
+}
+/* #contactUsPageTitle {
+    color: #6a5d19;
+    text-align: center;
+    text-shadow: 
+        -1px -1px 0 rgb(68, 95, 125),  
+         1px -1px 0 rgb(68, 95, 125),
+        -1px  1px 0 rgb(68, 95, 125),
+         1px  1px 0 rgb(68, 95, 125),
+         4px 4px 10px rgba(0, 0, 0, 0.5);
+    -webkit-text-stroke: 1px rgb(68, 95, 125);
+    pointer-events: none;
+} */
+
+

@@ -1,0 +1,87 @@
+/* Navigation Bar Styles */
+.navbar {
+    background-color: #7f7a61; /* Dark background color for the navbar */
+    padding: 10px 20px; /* Adds padding inside the navbar */
+    position: sticky; /* Keeps the navbar at the top of the page when scrolling */
+    top: 0; /* Sticks the navbar to the top of the page */
+    z-index: 1000; /* Ensures the navbar stays on top of other content */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow under the navbar */
+}
+
+.navbar-list {
+    list-style-type: none; /* Removes default list styling */
+    margin: 0; /* Removes default margin */
+    padding: 0; /* Removes default padding */
+    display: flex; /* Aligns the list items horizontally */
+    justify-content: flex-start; /* Aligns items to the start (left) */
+}
+
+.navbar-item {
+    margin-right: 20px; /* Adds space between each navbar item */
+}
+
+.navbar-link {
+    color: #465178; /* Sets the link text color to white */
+    text-decoration: none; /* Removes the underline from links */
+    font-size: 18px; /* Sets the font size of the links */
+    font-weight: bold; /* Makes the links bold */
+    padding: 8px 12px; /* Adds padding inside the links */
+    border-radius: 4px; /* Rounds the corners of the links */
+    transition: background-color 0.3s ease; /* Adds a transition effect when hovering over links */
+}
+
+.navbar-link:hover {
+    background-color: #555; /* Changes the background color on hover */
+    color: aqua;
+}
+
+/* Navigation Bar Styles */
+.navbar-list {
+    list-style-type: none; /* Removes default list styling */
+    margin: 0; /* Removes default margin */
+    padding: 0; /* Removes default padding */
+    display: flex; /* Aligns the list items horizontally */
+    justify-content: space-between; /* Distributes space between the first and last items */
+    align-items: center; /* Centers items vertically */
+}
+
+.navbar-item {
+    margin-right: 20px; /* Adds space between each navbar item */
+}
+
+/* Specific style to move the login item to the right */
+.navbar-login {
+    margin-left: auto; /* Pushes the login item to the right by taking up remaining space */
+}
+
+/* Additional styles for the login link */
+.navbar-link {
+    color: white; /* Sets the link text color to white */
+    text-decoration: none; /* Removes the underline from links */
+    font-size: 18px; /* Sets the font size of the links */
+    font-weight: bold; /* Makes the links bold */
+    padding: 8px 12px; /* Adds padding inside the links */
+    border-radius: 4px; /* Rounds the corners of the links */
+    transition: background-color 0.3s ease; /* Adds a transition effect when hovering over links */
+}
+
+.navbar-link:hover {
+    background-color: #555; /* Changes the background color on hover */
+    color: aqua;
+}
+
+
+/* Responsive Navigation Bar */
+@media (max-width: 768px) {
+    .navbar-list {
+        flex-direction: column; /* Stacks the navbar items vertically on smaller screens */
+        align-items: flex-start; /* Aligns items to the start (left) */
+    }
+
+    .navbar-item {
+        margin-right: 0; /* Removes right margin on smaller screens */
+        margin-bottom: 10px; /* Adds bottom margin between items on smaller screens */
+    }
+}
+
+
