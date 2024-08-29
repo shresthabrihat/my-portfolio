@@ -1,0 +1,67 @@
+/* Apply a background image to the whole page */
+html, body {
+    height: 100%; /* Full viewport height */
+    margin: 0; /* Remove default margin */
+  }
+  
+  body {
+    background-image: url('https://www.shutterstock.com/shutterstock/photos/2260687605/display_1500/stock-photo-minimalistic-abstract-gentle-light-beige-background-for-product-presentation-with-light-andand-2260687605.jpg'); /* Replace with your image URL */
+    background-size: cover; /* Cover the entire page */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent repeating the image */
+    display: flex; /* Use flexbox for centering content */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+  }
+  
+  /* Flexbox Container Styles */
+  .image-container {
+    display: flex; /* Applies flexbox layout */
+    justify-content: center; /* Centers the flexbox items horizontally */
+    align-items: center; /* Centers items vertically within the container */
+    gap: 20px; /* Adds a gap between flexbox items */
+    padding: 20px; /* Adds padding inside the flexbox container */
+    background-color: rgba(90, 67, 105, 0.8); /* Semi-transparent background color for readability */
+    border-radius: 8px; /* Rounded corners for the container */
+  }
+  
+  /* Flexbox Item Styles */
+  .image-item {
+    display: flex; /* Applies flexbox layout to the item itself */
+    flex-direction: column; /* Stacks the image and description vertically */
+    align-items: center; /* Centers content horizontally within each flexbox item */
+    text-align: center; /* Centers the text within each flexbox item */
+  }
+  
+  /* Circular Image Styles */
+  .circular-image {
+    width: 100px; /* Fixed width */
+    height: 100px; /* Fixed height */
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover; /* Ensures the image covers the circle without distortion */
+    margin-bottom: 0.5rem; /* Space between image and description */
+  }
+  
+  /* Description Styles */
+  .description {
+    font-size: 1rem; /* Adjust size as needed */
+    color: #fff; /* Text color for better contrast on dark background */
+  }
+  
+  /* Block of Text About Yourself */
+  .text-block {
+    padding: 20px; /* Adds padding around the text */
+    margin: 20px auto; /* Centers the text block and adds vertical margin */
+    max-width: 800px; /* Maximum width of the text block */
+    background-color: #cc8a50; /* Background color for contrast */
+    border-radius: 8px; /* Rounded corners for a softer look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    text-align: center; /* Centers the text within the block */
+  }
+  
+  .text-block p {
+    font-size: 1.1rem; /* Adjust size as needed */
+    line-height: 1.6; /* Increases line spacing for readability */
+    color: #333; /* Dark text color for better readability */
+  }
+  

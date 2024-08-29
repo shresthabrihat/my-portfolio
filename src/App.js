@@ -8,6 +8,7 @@ import Chatbox from './components/Chatbox';
 import ContactUs from './components/ContactUs';
 import Projects from './components/Projects';
 import About from './components/About';
+import Footer from './components/Footer';
 
 function App() {
 
@@ -25,6 +26,7 @@ function App() {
         <Route path="/projects" element={<Projects to="/projects" />} />
         <Route path="/about" element={<About to="/about" />} />
       </Routes>
+    <Footer/>
     </Router>
     </>
   );
