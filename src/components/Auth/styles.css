@@ -74,3 +74,17 @@
 .hidden {
     display: none; /* Hides the element from view */
 }
+
+/* ############################################## */
+/* ResetPassword */
+.form-reset-link {
+    display: block;
+    margin-top: 10px;
+    color: #007bff;
+    cursor: pointer;
+    text-align: center;
+  }
+
+  .form-reset-link:hover {
+    text-decoration: underline;
+  }
