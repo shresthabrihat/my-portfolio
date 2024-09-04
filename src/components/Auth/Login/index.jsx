@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import "../styles.css";
-const API_URL = "https://congenial-bassoon-q9576gq4xx92454w-5000.app.github.dev/api/auth/login";
-const host = `${process.env.CODESPACE_NAME}-5000.${process.env.GITHUB_USER}.github.dev`;
+// const API_URL = "https://congenial-bassoon-q9576gq4xx92454w-5000.app.github.dev/api/auth/login";
+// const host = `${process.env.CODESPACE_NAME}-5000.${process.env.GITHUB_USER}.github.dev`;
 
 
 export default () => {
@@ -19,13 +19,13 @@ export default () => {
   };
   
   const handleSubmit = async (event) => {
-    console.log("Access your app at:" + 'https://${host}')
+    // console.log("Access your app at:" + 'https://${host}')
     event.preventDefault();
 
     try {
-      // const res = await axios.post('http://localhost:5000/api/auth/login', {
+      const res = await axios.post('http://localhost:5000/api/auth/login', {
       // const res = await axios.post(`${host}/api/auth/login`, {
-        const res = await axios.post(API_URL, {
+        // const res = await axios.post(API_URL, {
         userEmail: loginEmail,
         userPassword: loginPassword,
       });
