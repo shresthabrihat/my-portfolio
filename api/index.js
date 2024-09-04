@@ -18,9 +18,7 @@ app.use(express.json());
 app.get('/', (req, res) => {
     res.send('Here I am your first running API!'); // <<< this line has been modified for testing purposes
 });
-app.use(cors({
-    origin: 'http://localhost:3000'
-}));
+app.use(cors());
 
 // Define routes
 app.use('/api/auth', require('./routes/auth'));
@@ -29,5 +27,5 @@ app.use('/api/profile', require('./routes/profile'));
 app.use('/api/reset-password', require('./routes/resetPassword'));
 
 // Set up the server to listen on a specific port
-const PORT = process.env.PORT || 5000;
+const PORT = 5000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
