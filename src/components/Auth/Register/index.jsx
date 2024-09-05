@@ -31,15 +31,21 @@ export default () => {
           userEmail: email,
           userPassword: password,
         });
-        console.log(res.data);
-        alert('Registration successful! A confirmation email has been sent.');
-        navigate('/login');  // Redirect to login page after successful registration
+
+        console.log('Server Response:', res.data);
+        if (res.status === 201 || res.status === 200) {
+          alert('Registration successful! A confirmation email has been sent.');
+          navigate('/login');  // Redirect to login page after successful registration
+        } else {
+          alert('Registration failed. Please try again.');
+        }
       } catch (err) {
-        console.error(err.response.data);
+        console.error('Error:', err.response ? err.response.data : err.message);
         alert('Registration failed. Please try again.');
       }
     }
   };
+
 
   return (
     <div className="form-container">

@@ -7,7 +7,7 @@ const router = express.Router();
 // Register a new user
 router.post('/register', async (req, res) => {
   const { firstName, lastName, userEmail, userPassword } = req.body;
-
+console.log("atempt to create a user!")
   try {
     let user = await UserProfile.findOne({ userEmail });
 
@@ -48,7 +48,7 @@ router.post('/register', async (req, res) => {
 // Login route
 router.post('/login', async (req, res) => {
   const { userEmail, userPassword } = req.body;
-
+  console.log("atempt to login!")
   try {
     let user = await UserProfile.findOne({ userEmail });
 
